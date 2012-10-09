@@ -3,6 +3,7 @@
 # license that can be found in the LICENSE file.
 
 from django import test
+from django.contrib import admin as django_admin
 from django.db import models as django_models
 
 from blog.posts import models
@@ -31,3 +32,10 @@ class PostTestCase(test.TestCase):
 
     def test_body_should_be_a_TextField(self):
         self.assertIsInstance(self._field("body"), django_models.TextField)
+
+
+class PostAdminTestCase(test.TestCase):
+
+    def test_Post_is_registered_within_django_admin(self):
+        django_admin.autodiscover()
+        self.assertIn(models.Post, django_admin.site._registry)
