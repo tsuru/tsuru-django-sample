@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:8080 blog.wsgi
+web: gunicorn -b 127.0.0.1:8888 blog.wsgi
