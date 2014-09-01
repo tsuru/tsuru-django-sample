@@ -1,4 +1,4 @@
 hooks:
-  pos-restart:
+  post-restart:
     - python manage.py syncdb --noinput
     - python manage.py migrate
