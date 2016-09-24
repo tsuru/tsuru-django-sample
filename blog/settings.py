@@ -16,14 +16,20 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': os.environ.get('MYSQL_DATABASE_NAME', 'blog'),
+    #     'USER': os.environ.get('MYSQL_USER', 'root'),
+    #     'PASSWORD': os.environ.get('MYSQL_PASSWORD', ''),
+    #     'HOST': os.environ.get('MYSQL_HOST', ''),
+    #     'PORT': os.environ.get('MYSQL_PORT', ''),
+    # }
+
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE_NAME', 'blog'),
-        'USER': os.environ.get('MYSQL_USER', 'root'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD', ''),
-        'HOST': os.environ.get('MYSQL_HOST', ''),
-        'PORT': os.environ.get('MYSQL_PORT', ''),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
+
 }
 
 TIME_ZONE = 'America/Sao_Paulo'
