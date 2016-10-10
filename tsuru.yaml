@@ -1,4 +1,4 @@
 hooks:
   build:
-    - /home/application/.app_env/bin/python /home/application/current/manage.py syncdb --noinput
+    - /home/application/.app_env/bin/python /home/application/current/manage.py collectstatic -c --noinput
     - /home/application/.app_env/bin/python /home/application/current/manage.py migrate
