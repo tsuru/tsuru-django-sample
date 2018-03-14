@@ -1,4 +1,0 @@
-hooks:
-  build:
-    - /var/lib/pyenv/versions/2.7.13/envs/app_env_2.7.13/bin/python /home/application/current/manage.py collectstatic -c --noinput
-    - /var/lib/pyenv/versions/2.7.13/envs/app_env_2.7.13/bin/python /home/application/current/manage.py migrate
