@@ -25,7 +25,8 @@ SECRET_KEY = '-d=ok(f$5-av!1!dprap4fz$_q2zu*@r*^m7wsnugw2@p6lsla'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Add here your app domain name
+ALLOWED_HOSTS = ['example.prod.us.cloud.trustyou.net']
 
 
 # Application definition
@@ -117,5 +118,5 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-STATIC_ROOT = '/home/application/current/blog/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
