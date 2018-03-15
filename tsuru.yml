@@ -1,4 +1,4 @@
 hooks:
   build:
-    - python /home/application/current/manage.py collectstatic -c --noinput
-    - python /home/application/current/manage.py migrate
+    - python manage.py collectstatic -c --noinput
+    - python manage.py migrate
