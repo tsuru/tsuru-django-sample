@@ -7,5 +7,7 @@ This is the example project used in the guide ["Deploying Python applications in
 Before deploying this app to tsuru, you need to add the host/domain name to `ALLOWED_HOSTS` configuration in `blog/settings.py`:
 
 ```
-ALLOWED_HOSTS = ['my-app.cloud.example.com']
+ALLOWED_HOSTS = ['my-app.cloud.example.com', 'example.domain.net', 'lvh.me']
 ```
+
+To run locally, you can use `lvh.me` domain.
