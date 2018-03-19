@@ -26,7 +26,7 @@ SECRET_KEY = '-d=ok(f$5-av!1!dprap4fz$_q2zu*@r*^m7wsnugw2@p6lsla'
 DEBUG = True
 
 # Add here your app domain name
-ALLOWED_HOSTS = ['example.prod.us.cloud.trustyou.net']
+ALLOWED_HOSTS = ['example.domain.net']
 
 
 # Application definition
